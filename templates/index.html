@@ -18,9 +18,9 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Work Experience" placeholder="Experience" required="required" />
-        <input type="text" name="Exam Feedback" placeholder="Test Score" required="required" />
-		<input type="text" name="HR Feedback" placeholder="Interview Score" required="required" />
+    	<input type="text" name="experience" placeholder="Work Experience" required="required" />
+        <input type="text" name="test_score" placeholder="Exam Feedback" required="required" />
+		<input type="text" name="interview_score" placeholder="HR Feedback" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">CTC Prediction</button>
     </form>
